@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+@keyframes backInUp {
+    0% {
+        transform: translateY(120px) scale(0.7);
+        opacity: 0.7;
+    }
+
+    80% {
+        transform: translateY(0px) scale(0.7);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+@keyframes pulse {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+
+@keyframes tada {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    10%,
+    20% {
+        transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    }
+
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+
+    40%,
+    60%,
+    80% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes change-color {
+    from {
+        background: black;
+    }
+
+    to {
+        background: #9aee8b9c;
+    }
+}
+
+@keyframes backInDown {
+    0% {
+        transform: translateY(-1200px) scale(0.7);
+        opacity: 0.7;
+    }
+
+    80% {
+        transform: translateY(0px) scale(0.7);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.html {
+    background-image: url("img/img1.png");
+}
+
+.html1 {
+    background-image: url("img/img2.png");
+}
+
+#img {
+    width: 100px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 1000px;
+    cursor: pointer;
+}
+
+#img:hover {
+    width: 100px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 20px;
+    transform: scale(1.5) rotate(360deg);
+    transition: width 1s, height 1s, transform 1s;
+}
+
+.header {
+    background-color: rgb(124, 183, 120, 0.6);
+    border: 3px solid #ccc;
+    border-radius: 90px;
+    text-align: center;
+    padding: 20px 0;
+    margin-right: 250px;
+    margin-left: 250px;
+}
+
+.title {
+    font-size: 36px;
+    margin: 0;
+    color: rgb(0, 0, 0);
+    font-family: 'Tilt Neon', sans-serif;
+    animation-name: tada;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    text-shadow: -2px -2px 1px #ffffff, 2px 2px 1px #fff, -2px 2px 1px #ffffff, 2px -2px 1px #ffffff;
+}
+
+#table-section {
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+    margin: 20px;
+}
+
+#table {
+    width: 80%;
+    max-width: 400px;
+    background-color: rgba(0, 0, 0, 0.637);
+    border-radius: 10px;
+}
+
+#table td {
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    background-attachment: fixed;
+}
+
+#table2 {
+    width: 80%;
+    max-width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.637);
+}
+
+#table2 td {
+    border: 3px solid #ccc;
+    border-radius: 10px;
+}
+
+.tabla2 {
+    height: 500px;
+    padding-left: 30px;
+}
+
+.grupos {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.737);
+    font-family: 'Tilt Neon', sans-serif;
+    padding: 13.2px;
+}
+
+.grupos:hover {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgb(124, 183, 120, 0.6);
+    cursor: pointer;
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+.grupo2 {
+    animation: change-color 1s linear 1 forwards;
+}
+
+
+body {
+    text-align: center;
+}
+
+.titulo {
+    font-size: 100px;
+    margin: 0;
+    color: rgb(0, 0, 0);
+    font-family: 'Tilt Neon', sans-serif;
+    animation-name: backInDown;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    text-shadow: -2px -2px 1px #ffffff, 2px 2px 1px #fff, -2px 2px 1px #ffffff, 2px -2px 1px #ffffff;
+}
+
+.titulo2 {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-left: 600px;
+    font-family: 'Tilt Neon', sans-serif;
+    animation-name: backInDown;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    text-shadow: -1px -1px 1px #ffffff, 1px 1px 1px #fff, -1px 1px 1px #ffffff, 1px -1px 1px #ffffff;
+}
+
+.titulo3 {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-left: 600px;
+    font-family: 'Tilt Neon', sans-serif;
+    animation-name: backInDown;
+    animation-duration: 3.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    text-shadow: -1px -1px 1px #ffffff, 1px 1px 1px #fff, -1px 1px 1px #ffffff, 1px -1px 1px #ffffff;
+}
+
+.transicio {
+    margin-top: 30px;
+    display: inline-block;
+    background-color: #194f6b;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    transition: background-color 0.3s;
+    text-align: center;
+    margin: 50px auto;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.transicio:hover {
+    width: 120px;
+    height: 25px;
+    border-radius: 5;
+    transition: width 1s, height 1s, transform 1s, background-color 1s;
+    color: #ffffff;
+    transform: scale(1.5);
+    text-align: center;
+}
+
+.pos {
+    visibility: hidden;
+    position: absolute;
+    border: 9px double white;
+    margin-left: 1200px;
+    margin-top: 30px;
+    padding: 30px;
+    width: 150px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.637);
+    color: #ccc;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Tilt Neon', sans-serif;
+    animation-name: backInUp;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
